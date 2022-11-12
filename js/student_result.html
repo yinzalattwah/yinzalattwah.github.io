@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Form</h1>
+    <form name="myform" action="">  
+        <label for="stuName">Student Name</label> <input type="text" id="stuName" name="stuName" required><br><br>
+        <label for="myanScore">Myanmar Score</label> <input type="number" id="myanScore" name="myanScore" required><br><br>
+        <label for="engScore">English Score</label> <input type="number" id="engScore" name="engScore" required><br><br>
+        <label for="mathScore">Math Score</label> <input type="number" id="mathScore" name="mathScore" required><br><br>
+        <label for="phyScore">Physics Score</label> <input type="number" id="phyScore" name="phyScore" required><br><br>
+        <label for="cheScore">Chemistry Score</label> <input type="number" id="cheScore" name="cheScore" required><br><br>
+        <label for="bioScore">Bio Score</label> <input type="number" id="bioScore" name="bioScore" required><br><br>
+       <button type="button" onclick="showData();">Submit</button>
+    </form>
+
+    <h1>Student List</h1>
+
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Student Name</td>
+                <td>Myanmar Score</td>
+                <td>English Score</td>
+                <td>Math Score</td>
+                <td>Physics Score</td>
+                <td>Chemistry Score</td>
+                <td>Bio Score</td>
+                <td>Total Score</td>
+                <td>Result</td>
+            </tr>
+        </thead>
+        <tbody id="myData">
+        </tbody>
+    </table>
+
+    <script>    
+    
+        let studentArray=[];
+
+        function showData() {            
+
+            let stuName = document.myform.stuName.value;
+            let myanScore = document.myform.myanScore.value;
+            let engScore = document.myform.engScore.value;       
+            let mathScore = document.myform.mathScore.value;      
+            let phyScore = document.myform.phyScore.value; 
+            let cheScore = document.myform.cheScore.value; 
+            let bioScore = document.myform.bioScore.value; 
+           
+            let list={   
+                stuName : stuName,
+                myanScore : myanScore,
+                engScore : engScore,       
+                mathScore : mathScore,      
+                phyScore : phyScore, 
+                cheScore : cheScore, 
+                bioScore : bioScore, 
+            }
+
+            studentArray.push(list);
+
+            let data = '';
+            let subTotal = 0;
+            let grade = '';
+
+            for(let i=0; i<studentArray.length; i++) {                
+
+                let record = studentArray[i];     
+                subTotal = parseInt(record.myanScore) + parseInt(record.engScore) + parseInt(record.mathScore)+ parseInt(record.phyScore)+ parseInt(record.cheScore)+ parseInt(record.bioScore) ; 
+
+                if (parseInt(record.myanScore) >= 40 && 
+                    parseInt(record.engScore) >= 40 &&
+                    parseInt(record.mathScore) >= 40 &&
+                    parseInt(record.phyScore) >= 40 &&
+                    parseInt(record.cheScore) >= 40 &&
+                    parseInt(record.bioScore) >= 40) {
+                        grade = 'pass';
+
+                } else {
+                    grade = 'fail';
+                }
+                
+                data = data + `
+                                <tr>
+                                    <td> ${i+1}</td>
+                                    <td> ${record.stuName}</td>
+                                    <td> ${record.myanScore}</td>
+                                    <td> ${record.engScore}</td>
+                                    <td> ${record.mathScore}</td>
+                                    <td> ${record.phyScore}</td>
+                                    <td> ${record.cheScore}</td>
+                                    <td> ${record.bioScore}</td>
+                                    <td> ${subTotal}</td>
+                                    <td> ${grade}</td>
+                                </tr>
+                            `;
+                subTotal = 0;
+            }    
+
+            document.getElementById("myData").innerHTML = data;
+        }
+
+    </script>
+</body>
+</html>

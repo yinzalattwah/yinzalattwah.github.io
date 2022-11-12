@@ -1,0 +1,56 @@
+h1,h2 {
+    text-align: center;
+}
+
+#time {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 130px;
+    display: table;
+    margin: 0 auto;
+}
+
+/* for css table*/
+form, table {
+    width: 450px;
+    display: table;
+    margin: 0 auto;
+}
+
+table {
+    background: #bfdddf;
+    margin-bottom: 55px;
+}
+
+form label {
+    display: block;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 24pt;
+    font-family: "Spartan";
+    text-align: left;
+    color: black;
+
+}
+
+form input {
+    text-align: left;
+    padding: 3px;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    background: #bfdddf;
+    width: 100%;    
+}
+
+form button {
+    border: 1px solid rgba(20, 29, 40, 0.1);
+    padding: 11px;
+    background-color: #bfdddf;
+    display: table;
+    margin: 0 auto;
+}

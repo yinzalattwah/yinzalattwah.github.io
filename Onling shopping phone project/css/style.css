@@ -1,0 +1,532 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}   
+    
+.bunner-img{
+   display: inline-block;
+   width: 50%;
+   height: 50%;
+   margin-right: 40px;
+}
+
+.nav_bar {
+   height: 90px;   
+   box-shadow: 30px 40px 40px rgba(17, 139, 179, 0.3);
+}
+
+.nav_bar div {
+   display: inline-block;
+}
+
+.nav_bar ul {
+    display: inline-block;
+    float: right;
+ }
+
+ .nav_bar li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 40px;
+ }
+
+ .nav_bar li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+ }
+
+ .nav_bar div a {
+    margin-top: 30px;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 24px;
+    text-decoration: none;
+    color: #70bfc4;
+ }
+
+ .nav_item:hover {
+    color: #70bfc4;
+ }
+
+ .noti {
+    position: relative;
+    top: -13px;
+    background-color: black;
+    color: white;
+    padding: 0px 7px;
+    border-radius: 50%;
+    left: -7px;
+ }
+
+ .bunner_img, .product_blog img, .contact_header_image, .contact_block_left img, .blog_content img {
+    width: 100%;
+ }
+
+ .bunner-text {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    color: blueviolet;
+ }
+
+ .bunner-text h1 {
+    margin-bottom: 10px;
+ }
+
+ .shop_now  {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    background-color: rgb(101, 101, 227);
+ }
+
+ .shop_now:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+ }
+
+ .header {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+ }
+
+ .category_center {
+    width: 700px;
+    margin: auto;
+ }
+
+ .category {
+    padding: 15px 25px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color:rgb(161, 161, 236);
+    border: 1px solid black;
+ }
+
+ .category:hover {
+    background-color: #70bfc4;
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+
+ .new_arrival_header {
+    border-left: 4px solid #70bfc4; 
+    margin-top: 50px;
+    margin-left: 100px;
+    padding-left: 35px;
+ }
+
+ .new_arrival {   
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0px 70px;
+    text-align: center;
+    grid-column-gap: 30px;
+ }
+
+ .new_arrival_icon {
+    padding-right: 10px;
+ }
+ 
+ .new_arrival div a img {
+   width: 100%;
+   height: 200px;
+ }
+
+.blog {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   margin-left: 70px;
+   margin-right: 70px;
+   padding-top:40px;
+   grid-column-gap:30px; 
+}
+
+.blog_image {
+   width: 100%;
+   border-radius:5px 5px 0px 0px; 
+   transition:.5s ease;
+}
+
+.blog_date {
+   color:#70bfc4;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.blog_text {
+   text-align: justify;
+   padding-left: 20px;
+   padding-right: 20px ;
+}
+.blog_image_zoom{
+   width: 100%;
+   height: 200%;
+   display: inline-block;
+   overflow: hidden;
+   border-radius: 5px 5px 0px 0px
+}
+
+.read_more {
+   color:#70bfc4;
+   margin-top:10px; 
+   display: inline-block;
+   padding-left:20px;
+   padding-right:20px;
+   padding-bottom: 40px;
+}
+
+.blog_image:hover {
+   transform: scale(1.3);
+   border-radius: 5px 5px 0px 0px;
+}
+
+.blog_image_zoom {
+   width: 100%;
+   height: 200px;
+   display: inline-block;
+   overflow: hidden;
+   border-radius: 5px 5px 0px 0px;
+}
+
+.blog small i {
+   padding-right: 10px;
+}
+
+.available_image {
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+   background-image: url(../images/iphone14.webp);
+   transition-duration: .3s;
+   transition-timing-function: ease;
+}
+
+.available_image:hover {
+   background-image: url(../images/bunner.jfif);
+   display: inline-block;
+   width: 200px;
+   height: 200px;
+   background-repeat: no-repeat;
+}
+
+.more_item {
+   margin-top: 30px;
+   text-align: center;
+}
+
+.more_item  a {
+   color: #142ace;
+}
+
+.support {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   padding: 30px; 
+   margin-top:50px;
+   background-color: rgb(229, 230, 231);
+}
+
+.support div p {
+   display: inline-block;
+   font-size: 13px;
+   padding-left: 10px;
+}
+
+.support div p b {
+   font-size: 18px;
+}
+
+footer {
+   background-color: black;
+   padding-top: 50px;
+}
+
+.footer_nav {
+   color: gray;
+   text-decoration: none;
+   margin: 0px 15px;
+}
+
+.designated_by {
+   color: gray;
+   margin-top: 20px;
+}
+
+.footer_icon {
+   color: gray;
+   display: inline-block;
+   margin: 20px 10px 50px;
+}
+
+.contact{
+   text-align: center;
+   color: blue;
+}
+
+.clear {
+   clear:both;
+}
+
+.container {
+   display: table;
+   width: 80%;   
+   margin: 0 auto;
+   padding-top: 40px;
+}
+
+.contact_header_text {
+   position: absolute;
+   top: 43%;
+   color: white;
+   left: 41%;
+   font-size: 50px;
+}
+
+.contact_block {
+   width: 25%;
+   float: left;
+   color: black;
+   text-align: left;
+}
+
+.contact_block_left {
+   width: 20%;
+   float: left;
+}
+
+.contact_block_right {
+   width: 75%;
+   float: left;
+}
+
+.contact_header {
+   position: relative;
+}
+
+.contact_block_header {
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.contact_block_body {
+   color: gray;
+   margin-top: 10px;
+}
+
+.contact_submit {
+   width: 100%;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.contact_content, .contact_map {
+   width: 50%;
+   float: left;
+}
+
+.contact_content label {
+   margin-right: 30px;
+}
+
+.contact_content input, .contact_content textarea {
+   text-align: left;
+   padding: 3px;
+   color: black;
+}
+
+.contact_content .send {
+   padding: 5px;
+}
+
+/* for contact page*/
+.about_block {
+   width: 30%;
+   float: left;
+   padding: 15px;
+}
+
+.about_block img {
+   width: 100%;
+   height: 100%;
+}
+
+.about_block_header {
+   text-align: center;
+   font-size: 25px;
+}
+
+.about_block_body {
+   text-align: center;
+   font-size: 17px;
+   color: gray;
+}
+
+/* for blog page*/
+.main_blog {
+   display: inline-block;
+   width: 100%;
+}
+
+.blog_content_left {
+   width: 75%;
+   float: left;
+}
+
+.blog_content_right {
+   width: 20%;
+   float: left;
+   margin-left: 5%;
+}
+
+.blog_content {
+   position: relative;
+   margin-bottom: 200px;
+}
+
+.blog_content_body {
+   position: absolute;
+   top: 49%;
+   left: 0;
+   right: 0;
+   margin: auto;
+   background-color: white;
+   width: 80%; 
+   padding: 50px;  
+   border: 1px solid rgba(20, 29, 40, 0.1);    
+}
+
+.blog_content_body h5 {
+   font-size: 30px;
+}
+
+.blog_content_body p {
+   color: #5c6f87;
+}
+
+.tag_links a.tag_right {
+   margin-left: 20px;
+}
+
+.blog_content_body .detail {
+   margin-bottom: 15px;
+}
+
+.blog_content_body .detail span {   
+   color: #5c6f87;
+}
+
+.blog_content_body .detail span.left::before {
+   content: none;
+   margin-left: 0;
+}
+
+.blog_content_body .detail span::before{
+   content: '|';
+   font-size: 16px;
+   margin-left: 10px;
+   margin-right: 10px;
+   font-weight: 400;
+   color: #5c6f87;
+}
+
+.tag_links {
+   margin-top: 40px;
+   display: inline-block;
+}
+
+.blog_content_right h3 {
+ margin-top: 30px;
+}
+
+.blog_content_right h3:first-child {
+   margin-top: 0px;
+}
+
+.blog_content_right li {
+   border-bottom: 1px solid #5c6f87;
+   padding: 15px 0;
+   list-style: none;
+}
+
+.tag_links a {
+   border: 1px solid rgba(20, 29, 40, 0.1);
+   padding: 5px 10px;
+   color: #5c6f87;
+   text-decoration: none;
+}
+
+.popular_item {
+   margin-top: 20px;
+   display: inline-block;
+   width: 100%;
+}
+
+.popular_item_img {
+   width: 85px;
+   height: 85px;
+   float: left;
+}
+
+.popular_item_img img {
+   width: 100%;
+   height: 100%;
+}
+
+.popular_item_des {
+   width: 60%;
+   float: left;
+   margin-left: 5%;
+}
+
+/* for product page */
+.product_blog {
+   width: 31%;
+   float: left;
+   margin-left: 3%;
+   position: relative;
+   margin-top: 20px;
+}
+
+.product_blog:first-child, .product_blog:nth-child(4) {
+   margin-left: 0px;
+}
+
+.product_blog_detail {
+   display: none;
+}
+
+.product_blog:hover .product_blog_detail {
+   display: block;  
+}
+
+.product_blog_detail {
+   margin: 0 40px;
+   padding: 45px 20px;   
+   transform: translateY(100%);
+   text-align: center;
+   position: absolute;
+   bottom: 83%;
+   left: 0;
+   right: 0;  
+   color: white;
+   transition: 0.3s;
+   font-size: 25px;   
+   border: 3px solid #5c6f87;    
+}
+
+.more_item {
+   border: 1px solid #5c6f87;
+   padding: 10px;
+   background: none;
+   color: white;
+}
+

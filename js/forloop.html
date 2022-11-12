@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forloop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        let num = prompt('Enter A Number');     
+        document.write('<h1>Loop Test</h1>'); 
+
+        for(let i=1; i<=12; i++){
+            document.write('<h2>' + num + ' * ' + i + ' = ' + num*i + '</h2>');
+        }
+
+        for (let k=5; k>=1;k--){
+            for (let y=5; y>=1;y--) {
+                document.write('*')
+            }
+            document.write('<br>')
+        }  
+    </script>
+</body>
+</html>
